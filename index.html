@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithvik Teja | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome / Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="theme-light notebook-bg">
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation / Header -->
+    <header class="header">
+        <div class="logo font-hand">RT.</div>
+        <nav class="nav-links font-hand">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="theme-btn font-hand" aria-label="Toggle Theme">
+            <i class="fas fa-terminal"></i> <span class="toggle-text">Terminal Mode</span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-padding">
+            <div class="hero-content">
+                <h1 class="hero-title font-hand">Hi, I'm Rithvik 👋</h1>
+                <h2 class="hero-subtitle font-inter" id="typed-text"></h2>
+                
+                <div class="hero-cta" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#projects" class="btn btn-primary font-hand">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary font-hand">Contact Me</a>
+                    <a href="CV%20Rithvik%20org.pdf" download class="btn btn-secondary font-hand"><i class="fas fa-file-download" style="margin-right: 5px;"></i> Download CV</a>
+                </div>
+            </div>
+
+            <!-- Floating Sticky Notes -->
+            <div class="floating-notes-container">
+                <div class="sticky-note float-note note-1 font-hand">
+                    <i class="fas fa-thumbtack pin-icon red-pin"></i>
+                    Coffee -> Design -> Code
+                </div>
+                <div class="sticky-note float-note note-9 font-hand">
+                    <i class="fas fa-thumbtack pin-icon red-pin"></i>
+                    Need More RAM 🧠
+                </div>
+                <div class="sticky-note float-note note-2 font-hand">
+                    <i class="fas fa-thumbtack pin-icon blue-pin"></i>
+                    Bugs = Features? 🤔
+                </div>
+                <div class="sticky-note float-note note-3 font-hand">
+                    <i class="fas fa-thumbtack pin-icon yellow-pin"></i>
+                    Sleep < 8hrs 🥲
+                </div>
+
+                <div class="sticky-note float-note note-5 font-hand">
+                    <i class="fas fa-thumbtack pin-icon blue-pin"></i>
+                    Always Be Shipping 🚀
+                </div>
+                <div class="sticky-note float-note note-6 font-hand">
+                    <i class="fas fa-thumbtack pin-icon yellow-pin"></i>
+                    git commit -m "fix"
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="section-container">
+                <h2 class="section-title font-hand">Who am I?</h2>
+                
+                <div class="about-card yellow-sticky">
+                    <i class="fas fa-thumbtack pin-icon red-pin"></i>
+                    <p class="font-hand" style="font-size: 1.6rem; margin-bottom: 20px; line-height: 1.5; text-align: left;">Hey there! I'm a passionate developer who bridges the gap between sleek frontend designs and robust backend architectures. I thrive on building scalable, real-world solutions that can handle thousands of concurrent users.</p>
+                    <ul class="font-hand about-list">
+                        <li>📍 Computer Science student at LPU.</li>
+                        <li>💻 Backend & Full-Stack Developer specializing in Node.js & React.</li>
+                        <li>🚀 Built complex real-time systems using WebRTC & WebSockets.</li>
+                        <li>🔥 Love solving algorithmic challenges and system design puzzles.</li>
+                        <li>💪🏻 Outside the matrix: Gym crushing, Cricket, & Badminton.</li>
+                        <li>🎵 Fueled constantly by caffeine and lofi beats.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Doodles -->
+            <div class="doodle doodle-arrow-1">⤵</div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="section-container">
+                <h2 class="section-title font-hand">My Toolkit 🎒</h2>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category font-hand">
+                        <h3>Languages</h3>
+                        <div class="stickers-container">
+                            <span class="sticker tag-blue"><i class="fas fa-code"></i> C++</span>
+                            <span class="sticker tag-yellow"><i class="fab fa-python"></i> Python</span>
+                            <span class="sticker tag-cream"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="sticker tag-blue"><i class="fab fa-java"></i> Java</span>
+                            <span class="sticker tag-yellow"><i class="fab fa-php"></i> PHP</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frameworks -->
+                    <div class="skill-category font-hand">
+                        <h3>Frameworks</h3>
+                        <div class="stickers-container">
+                            <span class="sticker tag-blue"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="sticker tag-yellow"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                            <span class="sticker tag-cream"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="sticker tag-blue"><i class="fas fa-server"></i> Express.js</span>
+                            <span class="sticker tag-yellow"><i class="fab fa-react"></i> React.js</span>
+                            <span class="sticker tag-cream"><i class="fas fa-bolt"></i> FastAPI</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools/Platforms -->
+                    <div class="skill-category font-hand">
+                        <h3>Tools/Platforms</h3>
+                        <div class="stickers-container">
+                            <span class="sticker tag-yellow"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="sticker tag-blue"><i class="fas fa-leaf"></i> MongoDB</span>
+                            <span class="sticker tag-cream"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="sticker tag-yellow"><i class="fas fa-table"></i> Polars</span>
+                            <span class="sticker tag-blue"><i class="fab fa-github"></i> Git/GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category font-hand">
+                        <h3>Soft Skills</h3>
+                        <div class="stickers-container">
+                            <span class="sticker tag-cream"><i class="fas fa-lightbulb"></i> Problem-Solving</span>
+                            <span class="sticker tag-blue"><i class="fas fa-users"></i> Team Player</span>
+                            <span class="sticker tag-yellow"><i class="fas fa-brain"></i> Quick Learner</span>
+                            <span class="sticker tag-cream"><i class="fas fa-sync-alt"></i> Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="section-container">
+                <h2 class="section-title font-hand">Assignments 📁</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="assignment-card">
+                        <div class="paperclip"></div>
+                        <h3 class="font-hand project-title">Stock Indicator API</h3>
+                        <div class="project-content font-inter">
+                            <p><strong>Problem:</strong> Need fast technical analysis for trading algorithms.</p>
+                            <p><strong>Role:</strong> Backend Developer</p>
+                            <div class="tech-stack-mini">
+                                <span class="mini-tag">FastAPI</span>
+                                <span class="mini-tag">Polars</span>
+                                <span class="mini-tag">Caching</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-project-link font-hand">View assignment &rarr;</a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="assignment-card">
+                        <div class="paperclip"></div>
+                        <h3 class="font-hand project-title">Smart Fertilizer Planner</h3>
+                        <div class="project-content font-inter">
+                            <p><strong>Problem:</strong> Optimizing crop nutrient plans efficiently.</p>
+                            <p><strong>Role:</strong> Full-Stack Developer</p>
+                            <div class="tech-stack-mini">
+                                <span class="mini-tag">MERN</span>
+                                <span class="mini-tag">GIS</span>
+                                <span class="mini-tag">Weather API</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-project-link font-hand">View assignment &rarr;</a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="assignment-card">
+                        <div class="paperclip"></div>
+                        <h3 class="font-hand project-title">Real-time Interview Platform</h3>
+                        <div class="project-content font-inter">
+                            <p><strong>Problem:</strong> Live coding environment with WebRTC, Socket.io, secure code execution judge, and proctoring.</p>
+                            <p><strong>Role:</strong> Full-Stack Developer</p>
+                            <div class="tech-stack-mini">
+                                <span class="mini-tag">WebRTC</span>
+                                <span class="mini-tag">Socket.io</span>
+                                <span class="mini-tag">Node.js</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-project-link font-hand">View assignment &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section-padding">
+            <div class="section-container">
+                <h2 class="section-title font-hand">Certifications 📜</h2>
+                <p class="font-hand text-center instruction-text" style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 20px;">(Click the book to turn pages)</p>
+                
+                <div class="cert-book-container">
+                    <div class="cert-book">
+                        
+                        <!-- Page 0 (Cover) -->
+                        <div class="cert-page cert-cover" onclick="window.turnPage(event, this)" style="z-index: 5;">
+                            <div class="page-front" style="background: #d16853; color: white;">
+                                <h2 class="font-hand" style="font-size: 3rem; margin-bottom: 20px;">My Certificates</h2>
+                                <p class="font-hand" style="font-size: 1.5rem;">Rithvik Teja</p>
+                                <div style="margin-top: 50px; font-size: 2.5rem;"><i class="fas fa-book-open"></i></div>
+                            </div>
+                            <div class="page-back"></div>
+                        </div>
+
+                        <!-- Page 1 -->
+                        <div class="cert-page" onclick="window.turnPage(event, this)" style="z-index: 4;">
+                            <div class="page-front">
+                                <img src="FullStack_certificate.png" alt="FullStack Certificate" class="cert-img-book">
+                                <h3 class="font-hand cert-title-book">FullStack</h3>
+                                <a href="FullStack%20certificate.pdf" target="_blank" class="view-pdf-link font-hand">View Original PDF</a>
+                            </div>
+                            <div class="page-back"></div>
+                        </div>
+
+                        <!-- Page 2 -->
+                        <div class="cert-page" onclick="window.turnPage(event, this)" style="z-index: 3;">
+                            <div class="page-front">
+                                <img src="Google_certificate.png" alt="Google Cloud Certificate" class="cert-img-book">
+                                <h3 class="font-hand cert-title-book">Google Cloud</h3>
+                                <a href="Google%20certificate.pdf" target="_blank" class="view-pdf-link font-hand">View Original PDF</a>
+                            </div>
+                            <div class="page-back"></div>
+                        </div>
+
+                        <!-- Page 3 -->
+                        <div class="cert-page" onclick="window.turnPage(event, this)" style="z-index: 2;">
+                            <div class="page-front">
+                                <img src="IBM_certificate.png" alt="IBM Certificate" class="cert-img-book">
+                                <h3 class="font-hand cert-title-book">IBM</h3>
+                                <a href="IBM%20certificate.pdf" target="_blank" class="view-pdf-link font-hand">View Original PDF</a>
+                            </div>
+                            <div class="page-back"></div>
+                        </div>
+
+                        <!-- Page 4 -->
+                        <div class="cert-page" onclick="window.turnPage(event, this)" style="z-index: 1;">
+                            <div class="page-front">
+                                <img src="MongoDB_certificate.png" alt="MongoDB Certificate" class="cert-img-book">
+                                <h3 class="font-hand cert-title-book">MongoDB</h3>
+                                <a href="MongoDB%20certificate.pdf" target="_blank" class="view-pdf-link font-hand">View Original PDF</a>
+                            </div>
+                            <div class="page-back" style="background: #d16853;">
+                                <div style="color: white; font-size: 2rem;"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding ruled-bg">
+            <div class="section-container">
+                <div class="contact-paper">
+                    <h2 class="section-title font-hand">Let's Connect! 📬</h2>
+                    <p class="font-hand contact-cta">Want to build something awesome or grab a coffee? Reach out!</p>
+                    
+                    <div class="contact-buttons font-hand">
+                        <a href="mailto:rithviktejakeerthi@gmail.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                        <a href="https://github.com/Rithvikteja123" target="_blank" class="contact-btn github-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/rithvik-teja/" target="_blank" class="contact-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="CV%20Rithvik%20org.pdf" target="_blank" class="contact-btn cv-btn">
+                            <i class="fas fa-eye"></i> View CV
+                        </a>
+                        <a href="CV%20Rithvik%20org.pdf" download="RithvikTeja_CV.pdf" class="contact-btn cv-btn">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+
+                    <div class="scribble font-hand">
+                        ~~ P.S. I reply quickly! ~~
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer font-hand">
+        <p>Made with ☕ and <i class="fas fa-heart" style="color:#d16853"></i> by Rithvik Teja</p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Lenis for smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js?v=4"></script>
+</body>
+</html>
