@@ -278,13 +278,14 @@ a {
 .blue-pin { color: #60a5fa; }
 .yellow-pin { color: #fbbf24; }
 
-.note-1 { top: 12%; left: 6%; transform: rotate(-5deg); animation: float1 6.5s infinite ease-in-out; }
-.note-2 { top: 18%; right: 6%; background-color: var(--pastel-blue); animation: float2 5.5s infinite ease-in-out; transform: rotate(3deg); }
-.note-3 { bottom: 10%; left: 38%; background-color: var(--pastel-cream); animation: float1 7s infinite ease-in-out; transform: rotate(-2deg); }
-.note-4 { top: 12%; right: 40%; background-color: var(--pastel-red); animation: float2 6s infinite ease-in-out; transform: rotate(-4deg); }
-.note-5 { top: 52%; right: 15%; background-color: var(--pastel-blue); animation: float1 5.8s infinite ease-in-out; transform: rotate(5deg); }
-.note-6 { bottom: 25%; left: 6%; background-color: var(--pastel-cream); animation: float1 7.2s infinite ease-in-out; transform: rotate(6deg); }
-.note-8 { bottom: 15%; right: 8%; background-color: var(--pastel-blue); animation: float1 6.8s infinite ease-in-out; transform: rotate(2deg); z-index: 5; }
+.note-1 { top: 5%; left: 5%; background-color: var(--pastel-yellow); animation: float1 6.5s infinite ease-in-out; transform: rotate(-5deg); z-index: 1; }
+.note-2 { top: 12%; right: 5%; background-color: var(--pastel-blue); animation: float2 5.5s infinite ease-in-out; transform: rotate(3deg); z-index: 2; }
+.note-3 { bottom: 15%; left: 10%; background-color: var(--pastel-cream); animation: float1 7.2s infinite ease-in-out; transform: rotate(-2deg); z-index: 1; }
+.note-4 { top: 35%; left: 20%; background-color: var(--pastel-red); animation: float2 6s infinite ease-in-out; transform: rotate(-4deg); z-index: 2; }
+.note-5 { top: 45%; right: 10%; background-color: var(--pastel-blue); animation: float1 5.8s infinite ease-in-out; transform: rotate(5deg); z-index: 3; }
+.note-6 { bottom: 40%; left: -5%; background-color: var(--pastel-cream); animation: float1 7.2s infinite ease-in-out; transform: rotate(6deg); z-index: 2; }
+.note-7 { top: 75%; left: 25%; background-color: var(--pastel-red); animation: float2 5.2s infinite ease-in-out; transform: rotate(-3deg); z-index: 4; }
+.note-8 { bottom: 5%; right: 15%; background-color: var(--pastel-blue); animation: float1 6.8s infinite ease-in-out; transform: rotate(2deg); z-index: 5; }
 .note-9 { bottom: 6%; right: 8%; background-color: var(--pastel-red); animation: float2 5s infinite ease-in-out; transform: rotate(-7deg); }
 .note-10 { top: 45%; left: 8%; background-color: var(--pastel-cream); animation: float1 6.2s infinite ease-in-out; transform: rotate(4deg); }
 
@@ -436,6 +437,97 @@ a {
     font-weight: bold;
 }
 [data-theme="terminal"] .view-project-link { color: var(--text-color); }
+
+/* Project Image Backgrounds */
+.bg-dsa { background-image: linear-gradient(rgba(253, 251, 247, 0.65), rgba(253, 251, 247, 0.75)), url('dsa_bg.png'); background-size: cover; background-position: center; border-color: rgba(0,0,0,0.1); }
+.bg-stock { background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.75)), url('stock_bg.png'); background-size: cover; background-position: center; border-color: rgba(0,0,0,0.1); }
+.bg-farm { background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.75)), url('farm_bg.png'); background-size: cover; background-position: center; border-color: rgba(0,0,0,0.1); }
+.bg-interview { background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.75)), url('interview_bg.png'); background-size: cover; background-position: center; border-color: rgba(0,0,0,0.1); }
+
+[data-theme="terminal"] .bg-dsa { background-image: linear-gradient(rgba(13, 17, 23, 0.6), rgba(13, 17, 23, 0.7)), url('dsa_bg.png'); border-color: var(--text-color); }
+[data-theme="terminal"] .bg-stock { background-image: linear-gradient(rgba(13, 17, 23, 0.6), rgba(13, 17, 23, 0.7)), url('stock_bg.png'); border-color: var(--text-color); }
+[data-theme="terminal"] .bg-farm { background-image: linear-gradient(rgba(13, 17, 23, 0.6), rgba(13, 17, 23, 0.7)), url('farm_bg.png'); border-color: var(--text-color); }
+[data-theme="terminal"] .bg-interview { background-image: linear-gradient(rgba(13, 17, 23, 0.6), rgba(13, 17, 23, 0.7)), url('interview_bg.png'); border-color: var(--text-color); }
+
+/* Clothesline Animation */
+.clothesline-container {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.clothesline {
+    position: absolute;
+    top: 20px;
+    left: -5vw;
+    right: -5vw;
+    height: 3px;
+    background: #888;
+    z-index: 1;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+[data-theme="terminal"] .clothesline {
+    background: var(--text-color);
+    border-bottom: none;
+}
+.hanging-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+.hanging-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: var(--shadow-soft);
+    width: 250px;
+    transform-origin: top center;
+    animation: swing 4s ease-in-out infinite alternate;
+}
+[data-theme="terminal"] .hanging-card {
+    background: transparent;
+}
+.hanging-card:nth-child(even) {
+    animation-duration: 4.5s;
+    animation-delay: 0.5s;
+}
+.clothes-peg {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 35px;
+    background: #e28743;
+    border-radius: 6px;
+    border: 1px solid #c97131;
+    z-index: 3;
+}
+.clothes-peg::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+    background: rgba(0,0,0,0.05);
+}
+[data-theme="terminal"] .clothes-peg {
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+}
+@keyframes swing {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+}
 
 /* Certificate Book Section */
 .cert-book-container {

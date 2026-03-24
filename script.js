@@ -20,7 +20,6 @@ function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
 }
-
 requestAnimationFrame(raf);
 
 // Register GSAP ScrollTrigger
@@ -99,8 +98,36 @@ gsap.from('.about-card', {
 
 
 
+// Clothesline slide in
+gsap.from('.education .clothesline-container', {
+    scrollTrigger: {
+        trigger: '.education',
+        start: 'top 80%',
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power2.out"
+});
+
+// 3. Education Cards Pop
+gsap.from('.education .assignment-card', {
+    scrollTrigger: {
+        trigger: '.education',
+        start: 'top 80%',
+    },
+    y: 100,
+    scale: 0.5,
+    rotation: () => Math.random() * 10 - 5,
+    opacity: 0,
+    duration: 1.2,
+    stagger: 0.15,
+    ease: "back.out(1.7)",
+    clearProps: "all"
+});
+
 // 4. Projects Cards Dynamic Pop
-gsap.from('.assignment-card', {
+gsap.from('.projects .assignment-card', {
     scrollTrigger: {
         trigger: '.projects',
         start: 'top 80%',
